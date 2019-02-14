@@ -1,0 +1,26 @@
+// So würde es aussehen ohne Enum und nur mit struct. Natürlich ohne Typ funktion
+
+#include <iostream>
+#include <string>
+
+struct Werte
+{
+	std::string Name;
+	int HP;
+};
+
+void printMonster(Werte werte)
+{
+	std::cout << "Das Monster heisst " << werte.Name << " und hat " << werte.HP << " HP.";
+}
+
+int main()
+{
+	Werte ogre{  "Peon", 145 };
+	Werte slime{ "Slimey", 23 };
+
+	printMonster(ogre);
+	printMonster(slime);
+
+	return 0;
+}
