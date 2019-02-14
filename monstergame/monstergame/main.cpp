@@ -44,8 +44,9 @@ std::string getMonstertypeString(Werte werte)
 
 void printMonster(Werte werte)
 {
-	std::cout << "Das Monster " << getMonstertypeString(werte) << " heisst " << werte.Name << " und hat "
-		<< werte.HP << " HP.";
+	std::cout << "Das Monster "       << getMonstertypeString(werte)
+		  << " heisst "           << werte.Name 
+		  << " und hat "          << werte.HP << " HP.";
 }
 
 int main()
